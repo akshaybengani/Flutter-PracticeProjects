@@ -1,0 +1,105 @@
+class MyTestPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(255, 255, 255, 230),
+      body: Column(
+        children: <Widget>[
+          Container(
+            child: Card(
+              margin: EdgeInsets.only(top: 50),
+              color: Color.fromRGBO(255, 255, 255, 250),
+              child: Text(
+                'Today',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            width: double.infinity,
+          ),
+          Container(
+            child: Card(
+              color: Colors.transparent,
+              margin: EdgeInsets.only(top: 30),
+              child: Text(
+                '3447',
+                style: TextStyle(
+                    fontSize: 50,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    backgroundColor: Color.fromRGBO(255, 255, 255, 250)),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Container(
+            child: Card(
+              color: Colors.transparent,
+              margin: EdgeInsets.only(top: 10),
+              child: Text(
+                'Total Steps',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    backgroundColor: Color.fromRGBO(255, 255, 255, 250)),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Container(
+            child: Card(
+              color: Colors.transparent,
+              margin: EdgeInsets.only(top: 30),
+              child: Text(
+                '\$03.61',
+                style: TextStyle(
+                    fontSize: 80,
+                    color: Color.fromRGBO(0, 226, 230, 1),
+                    fontWeight: FontWeight.w800,
+                    backgroundColor: Color.fromRGBO(255, 255, 255, 250)),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Container(
+            child: Card(
+              color: Colors.transparent,
+              margin: EdgeInsets.only(top: 10),
+              child: Text(
+                'Coins by Steps',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    backgroundColor: Color.fromRGBO(255, 255, 255, 250)),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Container(
+            child: Card(
+              color: Colors.black,
+              margin: EdgeInsets.only(top: 20),
+              child: Container(
+              
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      'LEVEL 1',
+                      style: TextStyle(color: Color.fromRGBO(0, 226, 230, 1)),
+                      textAlign: TextAlign.left,
+                    ),
+                    Text(
+                        'Reach 5 coins, 3 days in a row, to upgrade to Level 2'),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
